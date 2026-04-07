@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 25% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 10%;
+
+    --primary: 213 80% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 30% 95%;
+    --secondary-foreground: 220 25% 15%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 15% 50%;
+
+    --accent: 25 95% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 25% 90%;
+    --input: 214 25% 90%;
+    --ring: 213 80% 50%;
+
+    --radius: 0.75rem;
+
+    --hero-gradient: linear-gradient(135deg, hsl(213, 80%, 50%) 0%, hsl(230, 70%, 45%) 50%, hsl(250, 60%, 40%) 100%);
+    --cta-gradient: linear-gradient(135deg, hsl(25, 95%, 55%) 0%, hsl(15, 90%, 50%) 100%);
+    --card-shadow: 0 4px 24px -4px hsl(220 25% 10% / 0.08);
+    --card-hover-shadow: 0 8px 32px -4px hsl(220 25% 10% / 0.14);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans KR', sans-serif;
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: var(--hero-gradient);
+  }
+
+  .cta-gradient {
+    background: var(--cta-gradient);
+  }
+
+  .card-shadow {
+    box-shadow: var(--card-shadow);
+  }
+
+  .card-hover-shadow {
+    box-shadow: var(--card-hover-shadow);
+  }
+
+  .discount-code-badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-mono text-sm font-bold tracking-wider;
+    background: hsl(213, 80%, 95%);
+    color: hsl(213, 80%, 35%);
+    border: 1.5px dashed hsl(213, 80%, 70%);
+  }
+
+  .discount-rate {
+    @apply inline-flex items-center px-2.5 py-1 rounded-full text-sm font-bold;
+    background: hsl(25, 95%, 95%);
+    color: hsl(25, 95%, 40%);
+  }
+
+  .section-card {
+    @apply bg-card rounded-xl p-6 md:p-8 card-shadow;
+  }
+
+  .responsive-table-wrapper {
+    @apply w-full overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0;
+  }
+
+  .responsive-table {
+    @apply w-full text-sm;
+    min-width: 100%;
+  }
+
+  .responsive-table th {
+    @apply px-3 py-3 text-left font-semibold whitespace-nowrap;
+    background: hsl(210, 30%, 95%);
+    color: hsl(220, 25%, 25%);
+  }
+
+  .responsive-table td {
+    @apply px-3 py-3 border-b border-border;
+  }
+
+  .responsive-table tr:last-child td {
+    @apply border-b-0;
+  }
+
+  .cta-button {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold text-base transition-all duration-200;
+    background: var(--cta-gradient);
+    color: white;
+    box-shadow: 0 4px 14px -2px hsl(25, 95%, 55% / 0.4);
+  }
+
+  .cta-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px -2px hsl(25, 95%, 55% / 0.5);
+  }
+
+  .copy-button {
+    @apply inline-flex items-center gap-1.5 px-4 py-2 rounded-lg font-semibold text-sm transition-all duration-200 bg-primary text-primary-foreground;
+  }
+
+  .copy-button:hover {
+    @apply opacity-90;
+    transform: translateY(-1px);
+  }
+
+  .nav-link {
+    @apply relative px-3 py-2 text-sm font-medium transition-colors duration-200 rounded-lg;
+    color: hsl(220, 25%, 40%);
+  }
+
+  .nav-link:hover {
+    color: hsl(213, 80%, 50%);
+    background: hsl(213, 80%, 96%);
+  }
+
+  .nav-link.active {
+    color: hsl(213, 80%, 50%);
+    background: hsl(213, 80%, 94%);
+    font-weight: 600;
+  }
+
+  .step-number {
+    @apply inline-flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold flex-shrink-0;
+    background: hsl(213, 80%, 50%);
+    color: white;
+  }
+
+  .faq-item {
+    @apply border border-border rounded-xl overflow-hidden transition-all duration-200;
+  }
+
+  .badge-recommended {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold;
+    background: hsl(145, 65%, 92%);
+    color: hsl(145, 65%, 30%);
+  }
+
+  .badge-hot {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold;
+    background: hsl(0, 85%, 93%);
+    color: hsl(0, 85%, 40%);
+  }
+
+  .badge-new {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold;
+    background: hsl(213, 80%, 93%);
+    color: hsl(213, 80%, 35%);
+  }
+
+  /* Mobile card grid */
+  .card-grid {
+    @apply grid gap-4;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 768px) {
+    .card-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .card-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  /* Mobile responsive table as cards */
+  @media (max-width: 767px) {
+    .table-as-cards thead {
+      display: none;
+    }
+
+    .table-as-cards tbody tr {
+      @apply block mb-4 rounded-xl border border-border p-4;
+      background: hsl(0, 0%, 100%);
+    }
+
+    .table-as-cards tbody td {
+      @apply block px-0 py-1.5 border-b-0 text-sm;
+    }
+
+    .table-as-cards tbody td::before {
+      content: attr(data-label);
+      @apply font-semibold text-muted-foreground mr-2;
+    }
+  }
+}
