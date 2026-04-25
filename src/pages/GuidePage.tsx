@@ -12,17 +12,28 @@ const AFFILIATE_LINK = "http://app.ac/9bMm1Dl83";
 const GuidePage = () => (
   <>
     <Helmet>
-      <title>할인 완벽 가이드 - 트립닷컴 할인코드</title>
-      <meta name="description" content="트립닷컴 카드사별 할인코드 비교, 아고다·호텔스닷컴과의 가격 비교, 회원등급별 혜택 분석, 할인 극대화 조합 전략까지. 다른 곳에서 볼 수 없는 독보적인 할인 가이드." />
+      <title>할인 완벽 가이드 - 트립닷컴 할인쿠폰</title>
+      <meta name="description" content="트립닷컴 카드사별 할인쿠폰 비교, 아고다·호텔스닷컴과의 가격 비교, 회원등급별 혜택 분석, 할인 극대화 조합 전략까지. 다른 곳에서 볼 수 없는 독보적인 할인 가이드." />
       <link rel="canonical" href="https://trip.couponmonster.co.kr/guide" />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="할인 완벽 가이드 - 트립닷컴 할인쿠폰" />
+      <meta property="og:description" content="트립닷컴 카드사별 할인쿠폰 비교, 아고다·호텔스닷컴과의 가격 비교, 회원등급별 혜택 분석, 할인 극대화 조합 전략까지. 다른 곳에서 볼 수 없는 독보적인 할인 가이드." />
+      <meta property="og:url" content="https://trip.couponmonster.co.kr/guide" />
+      <meta property="og:image" content="https://trip.couponmonster.co.kr/images/og-image.jpg" />
+      <meta property="og:site_name" content="트립닷컴 할인쿠폰" />
+      <meta property="og:locale" content="ko_KR" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="할인 완벽 가이드 - 트립닷컴 할인쿠폰" />
+      <meta name="twitter:description" content="트립닷컴 카드사별 할인쿠폰 비교, 아고다·호텔스닷컴과의 가격 비교, 회원등급별 혜택 분석, 할인 극대화 조합 전략까지. 다른 곳에서 볼 수 없는 독보적인 할인 가이드." />
+      <meta name="twitter:image" content="https://trip.couponmonster.co.kr/images/og-image.jpg" />
       <script type="application/ld+json">{JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "트립닷컴 할인 완벽 가이드",
+        "headline": "트립닷컴 할인쿠폰 완벽 가이드",
         "description": "카드사별 비교, OTA 비교, 할인 극대화 전략",
         "url": "https://trip.couponmonster.co.kr/guide",
-        "datePublished": "2026-04-07",
-        "dateModified": "2026-04-07"
+        "datePublished": "2026-05-01",
+        "dateModified": "2026-05-07"
       })}</script>
     </Helmet>
 

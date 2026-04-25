@@ -12,14 +12,25 @@ const AFFILIATE_LINK = "http://app.ac/9bMm1Dl83";
 const HowToUsePage = () => (
   <>
     <Helmet>
-      <title>사용방법 가이드 - 트립닷컴 할인코드</title>
-      <meta name="description" content="트립닷컴 할인코드 적용 방법을 웹/앱별로 상세 안내합니다. 할인코드가 적용되지 않을 때 해결 방법, 결제 수수료 절약법, 결제 통화 설정까지 한 번에 확인하세요." />
+      <title>사용방법 가이드 - 트립닷컴 할인쿠폰</title>
+      <meta name="description" content="트립닷컴 할인쿠폰 적용 방법을 웹/앱별로 상세 안내합니다. 할인코드가 적용되지 않을 때 해결 방법, 결제 수수료 절약법, 결제 통화 설정까지 한 번에 확인하세요." />
       <link rel="canonical" href="https://trip.couponmonster.co.kr/how-to-use" />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="사용방법 가이드 - 트립닷컴 할인쿠폰" />
+      <meta property="og:description" content="트립닷컴 할인쿠폰 적용 방법을 웹/앱별로 상세 안내합니다. 할인코드가 적용되지 않을 때 해결 방법, 결제 수수료 절약법, 결제 통화 설정까지 한 번에 확인하세요." />
+      <meta property="og:url" content="https://trip.couponmonster.co.kr/how-to-use" />
+      <meta property="og:image" content="https://trip.couponmonster.co.kr/images/og-image.jpg" />
+      <meta property="og:site_name" content="트립닷컴 할인쿠폰" />
+      <meta property="og:locale" content="ko_KR" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="사용방법 가이드 - 트립닷컴 할인쿠폰" />
+      <meta name="twitter:description" content="트립닷컴 할인쿠폰 적용 방법을 웹/앱별로 상세 안내합니다. 할인코드가 적용되지 않을 때 해결 방법, 결제 수수료 절약법, 결제 통화 설정까지 한 번에 확인하세요." />
+      <meta name="twitter:image" content="https://trip.couponmonster.co.kr/images/og-image.jpg" />
       <script type="application/ld+json">{JSON.stringify({
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": "트립닷컴 할인코드 사용 방법",
-        "description": "트립닷컴 할인코드를 웹과 앱에서 적용하는 방법",
+        "name": "트립닷컴 할인쿠폰 사용 방법",
+        "description": "트립닷컴 할인쿠폰을 웹과 앱에서 적용하는 방법",
         "step": [
           { "@type": "HowToStep", "position": 1, "text": "프로모션 전용 링크로 접속합니다." },
           { "@type": "HowToStep", "position": 2, "text": "원하는 상품을 선택합니다." },

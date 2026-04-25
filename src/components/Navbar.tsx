@@ -21,11 +21,11 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-card/95 backdrop-blur-md border-b border-border" role="navigation" aria-label="메인 내비게이션">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center gap-2 font-bold text-lg" aria-label="트립닷컴 할인코드 홈">
+          <Link to="/" className="flex items-center gap-2 font-bold text-lg" aria-label="트립닷컴 할인쿠폰 홈">
             <Plane className="w-5 h-5 text-primary" />
             <span className="text-primary">트립닷컴</span>
             <Tag className="w-4 h-4 text-accent" />
-            <span className="text-foreground text-sm font-medium hidden sm:inline">할인코드</span>
+            <span className="text-foreground text-sm font-medium hidden sm:inline">할인쿠폰</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-1">

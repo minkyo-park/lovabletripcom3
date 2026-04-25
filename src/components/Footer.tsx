@@ -10,7 +10,7 @@ const Footer = () => (
         <div>
           <div className="flex items-center gap-2 font-bold text-lg mb-4">
             <Plane className="w-5 h-5" />
-            트립닷컴 할인코드
+            트립닷컴 할인쿠폰
           </div>
           <p className="text-sm opacity-70 leading-relaxed">
             트립닷컴의 모든 할인코드, 쿠폰, 프로모션, 카드사 제휴 정보를 한 곳에서 확인하세요. 
@@ -44,9 +44,9 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-primary-foreground/20 mt-8 pt-6 text-center text-xs opacity-50">
-        <p>© 2026 트립닷컴 할인코드 | couponmonster.co.kr</p>
+        <p>© 2026 트립닷컴 할인쿠폰 | couponmonster.co.kr</p>
         <p className="mt-1">이 사이트는 트립닷컴 제휴 프로그램을 통해 운영됩니다. 일부 링크를 통해 예약 시 수수료를 지급받을 수 있습니다.</p>
-        <p className="mt-1">최종 업데이트: 2026년 4월 7일</p>
+        <p className="mt-1">최종 업데이트: 2026년 5월 7일</p>
       </div>
     </div>
   </footer>

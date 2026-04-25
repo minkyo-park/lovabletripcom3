@@ -14,14 +14,25 @@ const AFFILIATE_LINK = "http://app.ac/9bMm1Dl83";
 const HomePage = () => (
   <>
     <Helmet>
-      <title>트립닷컴 할인코드</title>
-      <meta name="description" content="2026년 4월 트립닷컴 할인코드 총정리. 호텔 최대 12% 할인, 항공권 최대 4% 할인, 카드사 제휴 할인코드, 신규회원 쿠폰팩, 월별 프로모션까지 한눈에 확인하세요." />
+      <title>트립닷컴 할인쿠폰</title>
+      <meta name="description" content="트립닷컴 할인쿠폰 5월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다." />
       <link rel="canonical" href="https://trip.couponmonster.co.kr/" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="트립닷컴 할인쿠폰" />
+      <meta property="og:description" content="트립닷컴 할인쿠폰 5월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다." />
+      <meta property="og:url" content="https://trip.couponmonster.co.kr/" />
+      <meta property="og:image" content="https://trip.couponmonster.co.kr/images/og-image.jpg" />
+      <meta property="og:site_name" content="트립닷컴 할인쿠폰" />
+      <meta property="og:locale" content="ko_KR" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="트립닷컴 할인쿠폰" />
+      <meta name="twitter:description" content="트립닷컴 할인쿠폰 5월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다." />
+      <meta name="twitter:image" content="https://trip.couponmonster.co.kr/images/og-image.jpg" />
       <script type="application/ld+json">{JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "트립닷컴 할인코드 총정리",
-        "description": "2026년 4월 트립닷컴 할인코드 총정리",
+        "name": "트립닷컴 할인쿠폰",
+        "description": "트립닷컴 할인쿠폰 5월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다.",
         "url": "https://trip.couponmonster.co.kr/",
         "mainEntity": {
           "@type": "ItemList",
@@ -41,7 +52,7 @@ const HomePage = () => (
       </div>
       <div className="relative max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/20 backdrop-blur-sm text-primary-foreground text-sm font-medium mb-6">
-          <Clock className="w-4 h-4" /> 2026년 4월 최신 업데이트
+          <Clock className="w-4 h-4" /> 2026년 5월 최신 업데이트
         </div>
         <h1 className="text-3xl md:text-5xl font-black text-primary-foreground mb-4 leading-tight">
           트립닷컴 할인코드<br />
@@ -362,7 +373,7 @@ const HomePage = () => (
             </div>
             <div>
               <h2 id="kakaopay" className="text-xl font-bold">카카오페이 호텔 할인 <span className="badge-hot">12% 할인</span></h2>
-              <p className="text-sm text-muted-foreground">2026.04.06 ~ 05.31 한정</p>
+              <p className="text-sm text-muted-foreground">2026.05.01 ~ 06.30 한정</p>
             </div>
           </div>
           <div className="flex items-center gap-3 mb-4 flex-wrap">
@@ -388,7 +399,7 @@ const HomePage = () => (
           </div>
           <div>
             <h2 id="promos" className="text-2xl md:text-3xl font-bold">현재 진행중인 프로모션</h2>
-            <p className="text-sm text-muted-foreground">2026년 4월 기준</p>
+            <p className="text-sm text-muted-foreground">2026년 5월 기준</p>
           </div>
         </div>
 
@@ -401,7 +412,7 @@ const HomePage = () => (
           <div className="section-card">
             <span className="badge-hot mb-2 inline-block">HOT</span>
             <h3 className="font-bold text-lg mb-2">🎪 트립찬스 프로모션</h3>
-            <p className="text-xs text-muted-foreground mb-3">2026.03.30 ~ 04.12</p>
+            <p className="text-xs text-muted-foreground mb-3">2026.05.01 ~ 05.31</p>
             <ul className="space-y-1 text-sm">
               <li>• 일본 2박 3일 항공+호텔 19.9만원 특가</li>
               <li>• 도쿄 편도 항공권 1만원 특가</li>
@@ -413,7 +424,7 @@ const HomePage = () => (
           <div className="section-card">
             <span className="badge-new mb-2 inline-block">일본</span>
             <h3 className="font-bold text-lg mb-2">🌸 일본 여행 특가</h3>
-            <p className="text-xs text-muted-foreground mb-3">2026.03.29 ~ 04.26</p>
+            <p className="text-xs text-muted-foreground mb-3">2026.05.03 ~ 05.31</p>
             <ul className="space-y-1 text-sm">
               <li>• 일본 항공권 최대 3만원 할인코드</li>
               <li>• 일본 호텔 20% 할인 (최대 2만원)</li>
@@ -424,7 +435,7 @@ const HomePage = () => (
 
           <div className="section-card">
             <h3 className="font-bold text-lg mb-2">🏨 호텔 데일리/위클리 특가</h3>
-            <p className="text-xs text-muted-foreground mb-3">2026.03.09 ~ 12.31 (상시)</p>
+            <p className="text-xs text-muted-foreground mb-3">2026.05.01 ~ 12.31 (상시)</p>
             <ul className="space-y-1 text-sm">
               <li>• 매일 새로운 호텔 특가</li>
               <li>• 선착순 쿠폰 (오전 10시, 오후 6시)</li>
