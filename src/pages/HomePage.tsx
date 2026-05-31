@@ -15,24 +15,24 @@ const HomePage = () => (
   <>
     <Helmet>
       <title>트립닷컴 할인쿠폰</title>
-      <meta name="description" content="트립닷컴 할인쿠폰 5월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다." />
+      <meta name="description" content="트립닷컴 할인쿠폰 6월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다." />
       <link rel="canonical" href="https://trip.couponmonster.co.kr/" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="트립닷컴 할인쿠폰" />
-      <meta property="og:description" content="트립닷컴 할인쿠폰 5월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다." />
+      <meta property="og:description" content="트립닷컴 할인쿠폰 6월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다." />
       <meta property="og:url" content="https://trip.couponmonster.co.kr/" />
       <meta property="og:image" content="https://trip.couponmonster.co.kr/images/og-image.jpg" />
       <meta property="og:site_name" content="트립닷컴 할인쿠폰" />
       <meta property="og:locale" content="ko_KR" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="트립닷컴 할인쿠폰" />
-      <meta name="twitter:description" content="트립닷컴 할인쿠폰 5월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다." />
+      <meta name="twitter:description" content="트립닷컴 할인쿠폰 6월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다." />
       <meta name="twitter:image" content="https://trip.couponmonster.co.kr/images/og-image.jpg" />
       <script type="application/ld+json">{JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "트립닷컴 할인쿠폰",
-        "description": "트립닷컴 할인쿠폰 5월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다.",
+        "description": "트립닷컴 할인쿠폰 6월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다.",
         "url": "https://trip.couponmonster.co.kr/",
         "mainEntity": {
           "@type": "ItemList",
@@ -52,7 +52,7 @@ const HomePage = () => (
       </div>
       <div className="relative max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/20 backdrop-blur-sm text-primary-foreground text-sm font-medium mb-6">
-          <Clock className="w-4 h-4" /> 2026년 5월 최신 업데이트
+          <Clock className="w-4 h-4" /> 2026년 6월 최신 업데이트
         </div>
         <h1 className="text-3xl md:text-5xl font-black text-primary-foreground mb-4 leading-tight">
           트립닷컴 할인코드<br />
@@ -391,6 +391,44 @@ const HomePage = () => (
         </div>
       </section>
 
+      {/* 토스페이 */}
+      <section className="mb-16" aria-labelledby="tosspay">
+        <div className="section-card border-2 border-primary/30">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-10 h-10 rounded-xl cta-gradient flex items-center justify-center">
+              <CreditCard className="w-5 h-5 text-primary-foreground" />
+            </div>
+            <div>
+              <h2 id="tosspay" className="text-xl font-bold">토스페이 항공·호텔 할인 <span className="badge-hot">각 5% 할인</span></h2>
+              <p className="text-sm text-muted-foreground">토스페이 결제 시 항공 &amp; 호텔 각각 5% 할인 (최대 6만원, 최소 사용금액 없음)</p>
+            </div>
+          </div>
+
+          <div className="card-grid mb-4">
+            <DiscountCard
+              title="토스페이 항공 할인"
+              code="TOSSF05"
+              discount="5% 할인 (최대 6만원)"
+              target="항공권 (최소 사용금액 없음)"
+              badge="hot"
+              note="할인·예약 ~2026.06.30 / 이륙 ~2026.09.30. 계정당 1일 1회 선착순. 전용 링크 접속 후 결제 시 코드 입력."
+              href="http://app.ac/cEMTKrS53"
+            />
+            <DiscountCard
+              title="토스페이 호텔 할인"
+              code="TOSSH05"
+              discount="5% 할인 (최대 6만원)"
+              target="호텔 (최소 사용금액 없음)"
+              badge="hot"
+              note="할인·예약 ~2026.06.30 / 숙박 ~2026.09.30. 계정당 1일 1회 선착순. 전용 링크 접속 후 결제 시 코드 입력."
+              href="http://app.ac/cEMTKrS53"
+            />
+          </div>
+
+          <CtaButton text="토스페이 할인 적용하기" href="http://app.ac/cEMTKrS53" />
+        </div>
+      </section>
+
       {/* 현재 프로모션 */}
       <section className="mb-16" aria-labelledby="promos">
         <div className="flex items-center gap-3 mb-8">
@@ -399,7 +437,7 @@ const HomePage = () => (
           </div>
           <div>
             <h2 id="promos" className="text-2xl md:text-3xl font-bold">현재 진행중인 프로모션</h2>
-            <p className="text-sm text-muted-foreground">2026년 5월 기준</p>
+            <p className="text-sm text-muted-foreground">2026년 6월 기준</p>
           </div>
         </div>
 
@@ -412,7 +450,7 @@ const HomePage = () => (
           <div className="section-card">
             <span className="badge-hot mb-2 inline-block">HOT</span>
             <h3 className="font-bold text-lg mb-2">🎪 트립찬스 프로모션</h3>
-            <p className="text-xs text-muted-foreground mb-3">2026.05.01 ~ 05.31</p>
+            <p className="text-xs text-muted-foreground mb-3">2026.06.01 ~ 06.30</p>
             <ul className="space-y-1 text-sm">
               <li>• 일본 2박 3일 항공+호텔 19.9만원 특가</li>
               <li>• 도쿄 편도 항공권 1만원 특가</li>
@@ -424,7 +462,7 @@ const HomePage = () => (
           <div className="section-card">
             <span className="badge-new mb-2 inline-block">일본</span>
             <h3 className="font-bold text-lg mb-2">🌸 일본 여행 특가</h3>
-            <p className="text-xs text-muted-foreground mb-3">2026.05.03 ~ 05.31</p>
+            <p className="text-xs text-muted-foreground mb-3">2026.06.01 ~ 06.30</p>
             <ul className="space-y-1 text-sm">
               <li>• 일본 항공권 최대 3만원 할인코드</li>
               <li>• 일본 호텔 20% 할인 (최대 2만원)</li>

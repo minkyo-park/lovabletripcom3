@@ -32,8 +32,8 @@ const GuidePage = () => (
         "headline": "트립닷컴 할인쿠폰 완벽 가이드",
         "description": "카드사별 비교, OTA 비교, 할인 극대화 전략",
         "url": "https://trip.couponmonster.co.kr/guide",
-        "datePublished": "2026-05-01",
-        "dateModified": "2026-05-07"
+        "datePublished": "2026-06-01",
+        "dateModified": "2026-06-07"
       })}</script>
     </Helmet>
 

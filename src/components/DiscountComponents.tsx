@@ -28,11 +28,12 @@ export const CopyCodeButton = ({ code, label }: CopyCodeButtonProps) => {
 interface CtaButtonProps {
   text?: string;
   className?: string;
+  href?: string;
 }
 
-export const CtaButton = ({ text = "할인 적용하기", className = "" }: CtaButtonProps) => (
+export const CtaButton = ({ text = "할인 적용하기", className = "", href }: CtaButtonProps) => (
   <a
-    href={AFFILIATE_LINK}
+    href={href || AFFILIATE_LINK}
     target="_blank"
     rel="noopener noreferrer nofollow"
     className={`cta-button ${className}`}
@@ -48,9 +49,10 @@ interface DiscountCardProps {
   target: string;
   badge?: "recommended" | "hot" | "new";
   note?: string;
+  href?: string;
 }
 
-export const DiscountCard = ({ title, code, discount, target, badge, note }: DiscountCardProps) => (
+export const DiscountCard = ({ title, code, discount, target, badge, note, href }: DiscountCardProps) => (
   <div className="section-card hover:card-hover-shadow transition-shadow duration-300">
     <div className="flex items-start justify-between mb-3">
       <h3 className="font-bold text-base">{title}</h3>
@@ -63,7 +65,7 @@ export const DiscountCard = ({ title, code, discount, target, badge, note }: Dis
     {note && <p className="text-xs text-muted-foreground mb-3">{note}</p>}
     <div className="flex flex-wrap gap-2">
       {code && <CopyCodeButton code={code} />}
-      <CtaButton text="바로 적용" className="text-sm px-4 py-2" />
+      <CtaButton text="바로 적용" className="text-sm px-4 py-2" href={href} />
     </div>
   </div>
 );
