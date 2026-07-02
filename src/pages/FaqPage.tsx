@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { CtaButton } from "@/components/DiscountComponents";
 import { HelpCircle, Book, Shield, Phone, Lightbulb, Calendar, AlertTriangle } from "lucide-react";
 import customerService from "@/assets/customer-service.jpg";
@@ -28,7 +28,7 @@ const FAQItem = ({ q, a }: { q: string; a: string }) => {
 
 const FaqPage = () => (
   <>
-    <Helmet>
+    <Head>
       <title>FAQ & 꿀팁 위키 - 트립닷컴 할인쿠폰</title>
       <meta name="description" content="트립닷컴 자주 묻는 질문 총정리. 할인쿠폰 FAQ, 예약·결제·환불 가이드, 서비스 보장제, 고객센터 연락처, 결제수단, 용어 사전까지 한 곳에서 확인하세요." />
       <link rel="canonical" href="https://trip.couponmonster.co.kr/faq" />
@@ -53,7 +53,7 @@ const FaqPage = () => (
           { "@type": "Question", "name": "결제 방법은 어떤 것들을 지원하나요?", "acceptedAnswer": { "@type": "Answer", "text": "신용카드/체크카드, 내통장결제, 간편결제(네이버페이, 카카오페이, 삼성페이), 기프트카드/트립코인, 할부 결제를 지원합니다." } },
         ]
       })}</script>
-    </Helmet>
+    </Head>
 
     {/* Hero */}
     <section className="hero-gradient py-16 md:py-20">

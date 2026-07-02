@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { CtaButton } from "@/components/DiscountComponents";
 import { BarChart3, Target, Trophy, Zap, Star, TrendingUp, Clock } from "lucide-react";
 import creditCards from "@/assets/credit-cards.jpg";
@@ -11,7 +11,7 @@ const AFFILIATE_LINK = "http://app.ac/9bMm1Dl83";
 
 const GuidePage = () => (
   <>
-    <Helmet>
+    <Head>
       <title>할인 완벽 가이드 - 트립닷컴 할인쿠폰</title>
       <meta name="description" content="트립닷컴 카드사별 할인쿠폰 비교, 아고다·호텔스닷컴과의 가격 비교, 회원등급별 혜택 분석, 할인 극대화 조합 전략까지. 다른 곳에서 볼 수 없는 독보적인 할인 가이드." />
       <link rel="canonical" href="https://trip.couponmonster.co.kr/guide" />
@@ -35,7 +35,7 @@ const GuidePage = () => (
         "datePublished": "2026-06-01",
         "dateModified": "2026-06-07"
       })}</script>
-    </Helmet>
+    </Head>
 
     {/* Hero */}
     <section className="hero-gradient py-16 md:py-20">

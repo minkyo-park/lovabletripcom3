@@ -1,6 +1,6 @@
+import type { RouteRecord } from "vite-react-ssg";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async";
+import { Outlet } from "react-router-dom";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -13,25 +13,31 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <HelmetProvider>
+function RootLayout() {
+  return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <BrowserRouter>
-          <ScrollToTop />
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/how-to-use" element={<HowToUsePage />} />
-            <Route path="/guide" element={<GuidePage />} />
-            <Route path="/faq" element={<FaqPage />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-          <Footer />
-        </BrowserRouter>
+        <ScrollToTop />
+        <Navbar />
+        <Outlet />
+        <Footer />
       </TooltipProvider>
     </QueryClientProvider>
-  </HelmetProvider>
-);
+  );
+}
 
-export default App;
+export const routes: RouteRecord[] = [
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      { index: true, element: <HomePage /> },
+      { path: "how-to-use", element: <HowToUsePage /> },
+      { path: "guide", element: <GuidePage /> },
+      { path: "faq", element: <FaqPage /> },
+      { path: "*", element: <NotFound /> },
+    ],
+  },
+];
+
+export default routes;

@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
 import { Plane, Hotel, Ticket, Car, MapPin, CreditCard, Gift, Clock, ChevronRight, Star, Users, TrendingUp, Shield } from "lucide-react";
 import { DiscountCard, CtaButton, CopyCodeButton } from "@/components/DiscountComponents";
@@ -13,7 +13,7 @@ const AFFILIATE_LINK = "http://app.ac/9bMm1Dl83";
 
 const HomePage = () => (
   <>
-    <Helmet>
+    <Head>
       <title>트립닷컴 할인쿠폰</title>
       <meta name="description" content="트립닷컴 할인쿠폰 7월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다." />
       <link rel="canonical" href="https://trip.couponmonster.co.kr/" />
@@ -42,7 +42,7 @@ const HomePage = () => (
           ]
         }
       })}</script>
-    </Helmet>
+    </Head>
 
     {/* Hero Section */}
     <section className="relative overflow-hidden" aria-label="메인 배너">

@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { CtaButton, CopyCodeButton } from "@/components/DiscountComponents";
 import { Monitor, Smartphone, AlertTriangle, CreditCard, RefreshCw, Globe, ShieldCheck } from "lucide-react";
 import mobileBooking from "@/assets/mobile-booking.jpg";
@@ -11,7 +11,7 @@ const AFFILIATE_LINK = "http://app.ac/9bMm1Dl83";
 
 const HowToUsePage = () => (
   <>
-    <Helmet>
+    <Head>
       <title>사용방법 가이드 - 트립닷컴 할인쿠폰</title>
       <meta name="description" content="트립닷컴 할인쿠폰 적용 방법을 웹/앱별로 상세 안내합니다. 할인코드가 적용되지 않을 때 해결 방법, 결제 수수료 절약법, 결제 통화 설정까지 한 번에 확인하세요." />
       <link rel="canonical" href="https://trip.couponmonster.co.kr/how-to-use" />
@@ -39,7 +39,7 @@ const HowToUsePage = () => (
           { "@type": "HowToStep", "position": 5, "text": "할인 반영을 확인하고 결제를 완료합니다." },
         ]
       })}</script>
-    </Helmet>
+    </Head>
 
     {/* Hero */}
     <section className="hero-gradient py-16 md:py-20">
