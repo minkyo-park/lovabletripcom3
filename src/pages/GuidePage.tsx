@@ -33,7 +33,7 @@ const GuidePage = () => (
         "description": "카드사별 비교, OTA 비교, 할인 극대화 전략",
         "url": "https://trip.couponmonster.co.kr/guide",
         "datePublished": "2026-06-01",
-        "dateModified": "2026-06-07"
+        "dateModified": "2026-08-04"
       })}</script>
     </Head>
 
@@ -68,10 +68,10 @@ const GuidePage = () => (
                 {[
                   { card: "Mastercard", rate: "최대 20%", currency: "USD", period: "기간별 상이", stars: "★★★★★", badge: "최대 할인" },
                   { card: "신한카드", rate: "6~8%", currency: "USD", period: "~2026.12.31", stars: "★★★★★", badge: "최대 할인율" },
-                  { card: "네이버웨일", rate: "7%", currency: "USD", period: "~2026.06.30", stars: "★★★★★", badge: null },
+                  { card: "네이버웨일", rate: "7%", currency: "USD", period: "~2026.08.31", stars: "★★★★★", badge: null },
                   { card: "KB국민카드", rate: "최대 6%", currency: "USD", period: "~2026.12.31", stars: "★★★★☆", badge: null },
-                  { card: "우리카드", rate: "6%", currency: "USD", period: "~2026.06.30", stars: "★★★★☆", badge: null },
-                  { card: "BC카드", rate: "6%", currency: "KRW", period: "~2026.06.30", stars: "★★★★☆", badge: "KRW 가능" },
+                  { card: "우리카드", rate: "6%", currency: "USD", period: "~2026.08.31", stars: "★★★★☆", badge: null },
+                  { card: "BC카드", rate: "6%", currency: "KRW", period: "~2026.08.31", stars: "★★★★☆", badge: "KRW 가능" },
                   { card: "VISA", rate: "6~8%", currency: "USD", period: "~2026.12.31", stars: "★★★★☆", badge: null },
                   { card: "인플루언서 코드", rate: "5~12%", currency: "KRW", period: "상시", stars: "★★★★☆", badge: "조건 없음" },
                 ].map((row) => (
@@ -355,7 +355,7 @@ const GuidePage = () => (
         </div>
         <div className="section-card mt-4 bg-secondary">
           <h4 className="font-semibold text-sm mb-2">📝 예시</h4>
-          <p className="text-xs text-muted-foreground">예약기간: 7월 1일 ~ 7월 31일 / 숙박기간: 8월 1일 ~ 12월 31일<br />→ 반드시 7월 중에 할인코드를 입력하여 예약 완료해야 합니다.<br />→ 7월 31일 이후에는 할인코드 사용 예약 불가.</p>
+          <p className="text-xs text-muted-foreground">예약기간: 8월 1일 ~ 8월 31일 / 숙박기간: 9월 1일 ~ 12월 31일<br />→ 반드시 8월 중에 할인코드를 입력하여 예약 완료해야 합니다.<br />→ 8월 31일 이후에는 할인코드 사용 예약 불가.</p>
         </div>
       </section>
 
