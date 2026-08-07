@@ -14,25 +14,25 @@ const AFFILIATE_LINK = "http://app.ac/9bMm1Dl83";
 const HomePage = () => (
   <>
     <Head>
-      <title>트립닷컴 할인쿠폰</title>
-      <meta name="description" content="트립닷컴 할인쿠폰 8월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다." />
+      <title>트립닷컴 쿠폰</title>
+      <meta name="description" content="트립닷컴 쿠폰 8월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다." />
       <link rel="canonical" href="https://trip.couponmonster.co.kr/" />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="트립닷컴 할인쿠폰" />
-      <meta property="og:description" content="트립닷컴 할인쿠폰 8월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다." />
+      <meta property="og:title" content="트립닷컴 쿠폰" />
+      <meta property="og:description" content="트립닷컴 쿠폰 8월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다." />
       <meta property="og:url" content="https://trip.couponmonster.co.kr/" />
       <meta property="og:image" content="https://trip.couponmonster.co.kr/images/og-image.jpg" />
-      <meta property="og:site_name" content="트립닷컴 할인쿠폰" />
+      <meta property="og:site_name" content="트립닷컴 쿠폰" />
       <meta property="og:locale" content="ko_KR" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="트립닷컴 할인쿠폰" />
-      <meta name="twitter:description" content="트립닷컴 할인쿠폰 8월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다." />
+      <meta name="twitter:title" content="트립닷컴 쿠폰" />
+      <meta name="twitter:description" content="트립닷컴 쿠폰 8월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다." />
       <meta name="twitter:image" content="https://trip.couponmonster.co.kr/images/og-image.jpg" />
       <script type="application/ld+json">{JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "트립닷컴 할인쿠폰",
-        "description": "트립닷컴 할인쿠폰 8월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다.",
+        "name": "트립닷컴 쿠폰",
+        "description": "트립닷컴 쿠폰 8월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다.",
         "url": "https://trip.couponmonster.co.kr/",
         "mainEntity": {
           "@type": "ItemList",
